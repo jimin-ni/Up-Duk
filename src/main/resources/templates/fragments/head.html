@@ -65,6 +65,18 @@
             color:white;
             margin:0 auto;
         }
+        .Knavbar li:hover .dropdown01{
+            display:block;
+        }
+        .dropdown01{
+            display:none;
+            width:100%;
+            height:300px;
+            background-color:red;
+            position:absolute;
+            left:0px;
+        }
+
         footer{
             text-align:center;
             background-color:#F7F7F7;
@@ -103,10 +115,19 @@
         <div class="Knavbar">
             <ul>
                 <li><span>홈</span></li>
-                <li><span>전공</span></li>
-                <li><span>직무</span></li>
+                <li><span>전공</span>
+                    <div class="dropdown01">
+
+                    </div>
+                </li>
+                <li><span>직무</span>
+                    <div class="dropdown01">
+
+                    </div>
+                </li>
             </ul>
         </div>
+
     </nav>
     <br/><br/><br/><br/><br/><br/>
     <br/><br/><br/><br/><br/><br/>
