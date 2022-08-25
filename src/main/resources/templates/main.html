@@ -62,57 +62,19 @@
 
 </head>
 <body>
-
-<div th:fragment="header">
-    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="/">Shop</a>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/item/new">상품 등록</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/items">상품 관리</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/cart">장바구니</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/orders">구매이력</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/members/login">로그인</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/members/logout">로그아웃</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0" th:action="@{/}" method="get">
-                <input name="searchQuery" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-</div>
-
 <!-- 밑부분 -->
 
 <!--소개 멘트-->
 <br>
 <br>
 <br>
+<hr>
 <br>
 <br>
 <br>
 <h1 class="font_2" style="text-align:center;">
     <span style="line-height: 2.00em; text-align:center;">
-        <span style = "font-weight:bold;">
+        <span style = "font-weight:bold; color: #B70050; text-shadow: 2px 2px 2px gray;">
             <span style="font-size: 72px">준비</span>
             <span style="font-size: 50px">부터</span>
             <span style="font-size: 72px">취업</span>
@@ -127,42 +89,42 @@
 <br>
 <br>
 <br>
-<hr>
+<br>
 <br>
 <br>
 <br>
 <!-- 게시글 -->
-
+<div style="margin 40px 0; padding 10px 20px;">
 <div data-role="slider" data-width="500" data-height="400" style="margin: 0 auto; color: orange;">
-    <div class="container" style="overflow: hidden; display: inline;">
-        <!-- 갤러리 첫번째 페이지 -->
-        <div class="item">
-            <a href="">
-                <h1>내가 카카오에 입사할 수 있었던 5가지 이유</h1>
-                <p>내가 카카오에 입사할 수 있었던 것은 아주 큰 행운일 것이다..</p>
-            </a>
-        </div>
-        <!-- 갤러리 두번째 페이지 -->
-        <div class="item">
-            <a href="">
-                <img src="../static/img/post_image.jpg" width="500">
+        <div class="container" style="overflow: hidden; display: inline;">
+            <!-- 갤러리 첫번째 페이지 -->
+            <div class="item">
+                <a href="">
+                    <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/65f0b187018200001.png" width="500" height="300">
+                    <h3>내가 카카오에 입사할 수 있었던 5가지 이유</h3>
+                </a>
+            </div>
+            <!-- 갤러리 두번째 페이지 -->
+            <div class="item">
+                <a href="">
+                    <img src="https://www.gizmochina.com/wp-content/uploads/2019/10/samsung.jpg" width="500" height="300">
+                    <h3>비전공자부터 삼성 개발직까지 3년</h3>
+                </a>
+            </div>
+            <div class="item">
                 <h1>내가 삼성에 입사할 수 있었던 2가지 이유</h1>
-            </a>
-        </div>
-        <div class="item">
-            <h1>내가 삼성에 입사할 수 있었던 2가지 이유</h1>
-            <p>내가 삼성에 입사할 수 있었던 것은 여러가지 노력해서이다.</p>
+                <p>내가 삼성에 입사할 수 있었던 것은 여러가지 노력해서이다.</p>
+            </div>
         </div>
     </div>
 </div>
-
 <!--좌 우 이동 버튼-->
 <div style="margin: 0 auto; text-align: center;">
     <button id="left-button" style="background-color: white; border-style: hidden;" >
-        <h1>←</h1>
+        <h3>👈</h3>
     </button>
     <button id="right-button" style="background-color: white; border-style: hidden;">
-        <h1>→</h1>
+        <h3>👉</h3>
     </button>
 </div>
 
