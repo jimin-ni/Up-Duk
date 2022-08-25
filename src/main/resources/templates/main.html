@@ -3,44 +3,51 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
 
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link th:href="@{/css/layout1.css}" rel="stylesheet">
-
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
-        (function() { // A
-            const itemWrapperEl = document.querySelector('.item-wrapper'),
-                leftBtnEl = document.getElementById('left-btn'),
-                rightBtnEl = document.getElementById('right-btn');
+        $(document).ready(function () {
+            var width = $('[data-role="slider"]').attr('data-width');
+            var height = $('[data-role="slider"]').attr('data-height');
+            var count = $('[data-role="slider"] div.item').length;
 
-        function moveSlides(direction) { // B
-            const item = itemWrapperEl.querySelector('.item'),
-                itemMargin = parseFloat(getComputedStyle(item).marginRight);
-                itemWidth = itemMargin + item.offsetWidth + 2;
+            $('[data-role="slider"]').css({
+                position: 'relative',
+                overflow: 'hidden',
+                width: width,
+                height: height
+            }).find('.container').css({
+                position: 'absolute',
+                width: count * width,
+                overflow: 'hidden'
+            }).find('.item').css({
+                width: width,
+                height: height,
+                float: 'left'
+            });
 
-            let itemCount = Math.round(itemWrapperEl.scrollLeft / itemWidth);
+            var currentPage = 0;
+            var changePage = function () {
+                $('[data-role="slider"] > .container').animate({
+                    left: -currentPage * width
+                }, 500)
+            };
 
-            if (direction === 'left') {
-            itemCount = itemCount - 1;
-            } else {
-            itemCount = itemCount + 1;
-            }
-            itemWrapperEl.scrollLeft = itemWidth * itemCount;
-            }
+            $('#left-button').click(function () {
+                if (currentPage > 0) {
+                    currentPage = currentPage - 1;
+                    changePage();
+                }
+            });
 
-            leftBtnEl.addEventListener("click", e => moveSlides("left")); // C
-            rightBtnEl.addEventListener("click", e => moveSlides("right"));
-            })();
+            $('#right-button').click(function () {
+                if (currentPage < count - 1) {
+                    currentPage = currentPage + 1;
+                    changePage();
+                }
+            });
+        });
     </script>
-    <th:block layout:fragment="script"></th:block>
-    <th:block layout:fragment="css"></th:block>
 
 </head>
 <body>
@@ -75,47 +82,64 @@
 <br>
 <br>
 <br>
-
-
-<div class="slider">
-    <div class="slider-btn-wrapper slider-btn-wrapper-left"> <!-- 왼쪽 화살표 -->
-        <button id="left-btn" class="slider-btn">&larr;</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+    <div data-role="slider" data-width="600" data-height="400" style="margin: 0 auto;">
+        <div class="container" >
+            <!-- 갤러리 첫번째 페이지 -->
+            <div class="item">
+                <a href="https://www.duksung.ac.kr/bbs/board.do?bsIdx=37&menuId=1061">
+                    <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/65f0b187018200001.png" width="600" height="300">
+                    <h1>내가 카카오에 입사할 수 있었던 5가지 이유</h1>
+                </a>
+            </div>
+            <!-- 갤러리 두번째 페이지 -->
+            <div class="item">
+                <a href="">
+                    <img src="https://www.gizmochina.com/wp-content/uploads/2019/10/samsung.jpg" width="600" height="300">
+                    <h1>비전공자부터 삼성 개발직까지 3년</h1>
+                </a>
+            </div>
+            <div class="item">
+                <h1>내가 삼성에 입사할 수 있었던 2가지 이유</h1>
+                <p>내가 삼성에 입사할 수 있었던 것은 여러가지 노력해서이다.</p>
+            </div>
+        </div>
     </div>
-    <div class="item-wrapper">
-        <div class="item">
-            <img src="./images/seoul.jpg"/>
-            <div class="title">
-                <h2>서울</h2>
-                <p>3000원</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="./images/jeju.jpg"/>
-            <div class="title">
-                <h2>제주도</h2>
-                <p>4000원</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="images/suwon.jpg"/>
-            <div class="title">
-                <h2>수원</h2>
-                <p>3000원</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="./images/muju.jpg"/>
-            <div class="title">
-                <h2>무주</h2>
-                <p>5000원</p>
-            </div>
-        </div>
-    </div>
-    <div class="slider-btn-wrapper slider-btn-wrapper-right"> <!-- 오른쪽 화살표 -->
-        <button id="right-btn" class="slider-btn">&rarr;</button>
+
+    <div style="margin: 0 auto; text-align: center;">
+        <button id="left-button" style="background-color: white; border-style: hidden;">
+            <h1>👈</h1>
+        </button>
+        <button id="right-button" style="background-color: white; border-style: hidden;">
+            <h1>👉</h1>
+        </button>
     </div>
 </div>
 
+<div style="position: fixed; right: 20px; bottom: 50px;">
+    <img src="/img/write.png" width="100">
+</div>
 
 </body>
 </html>
