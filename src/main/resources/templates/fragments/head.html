@@ -43,27 +43,34 @@
             text-align:center;
             font-size:90px;
         }
-        .Knav{
-            position:sticky;
-            top:0;
+        ul li{
+            list-style:none;
         }
-        .Knavbar{
+        #Kmenu{
+            background-color:#B70050;
+            text-align:center;
             width:100%;
             height:47px;
-            background-color:#B70050
-        }
-
-        .Knavbar ul{
-            margin:0 350px;
-            list-style:none;
-            padding-left:0px;
-            display:flex;
-        }
-        .Knavbar li{
-            line-height:47px;
-            align-items:center;
             color:white;
+            line-height:47px;
             margin:0 auto;
+        }
+        ul{
+            margin:0px;
+            padding:0px;
+        }
+        #Kmenu ul li{
+            position:relative;
+            right:-400px;
+            float:left;
+            width:10%;
+        }
+        .Kdropdown01{
+            width:100%;
+            height:700px;
+            background-color:white;
+            position:relative;
+            bottom:-47px;
         }
         footer{
             text-align:center;
@@ -95,17 +102,22 @@
                 <span>덕대생들의 취업UP 정보 공유 커뮤니티</span>
             </div>
             <div class="Ktitle">
-                <spna>UP-Duk</spna>
+                <span>UP-Duk</span>
             </div>
-
         </div>
-        <nav class="Knav">
-            <div class="Knavbar">
-                <ul>
-                    <li><span>홈</span></li>
-                    <li><span>커뮤니티</span></li>
-                    <li><span>멘토링</span></li>
-                </ul>
+        <nav id="Kmenu">
+            <ul>
+                <li>홈</li>
+                <li>전공</li>
+                <li>직무</li>
+            </ul>
+            <div class="Kdropdown01">
+                <div class="Kglobal">
+                    <span>글로벌융합대학</span>
+                    국어국문학
+                    일어일문학
+                    중어중문학
+                </div>
             </div>
         </nav>
         <footer>
