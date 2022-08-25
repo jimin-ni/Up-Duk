@@ -13,6 +13,7 @@ body {
     width:1012.67px;
     margin: 0px auto;
 
+
 }
 
 #top {
@@ -21,12 +22,16 @@ height:1574px;
 background: #DDD9D652;
 border: 5px solid gray;
 padding: 60px;
+overflow:hidden;
 
 
 
 
 }
 
+#display {
+float:left;
+}
 
 img ~ span{
 color: blue;
@@ -36,23 +41,34 @@ font-family: forum
 
 }
 
-#top span:nth-child(2) {
 
-}
 
 #top article {
 font-size:20px;
 }
 
 
+.header {
+overflow:hidden;}
+#pic{
+float:left;
+}
 
+#name {
+float:left;
+margin-top:30px;
+}
 
+#name span {
+color:blue;
 
+}
 
 
 .login {
-width: 60px;
-height: 60px;
+width: 80px;
+height: 80px;
+margin-left:-10px;
 }
 
 .logo {
@@ -61,6 +77,19 @@ height: 30px;
 margin: 20px;
 }
 
+.in {
+width: 60px;
+height: 60px;
+margin-bottom:5px;
+}
+
+.d {
+width: 32px;
+height:32px;
+margin-top:22px;
+float: right;
+
+}
 
 #middle {
 height:213px;
@@ -70,61 +99,73 @@ border: 5px solid gray;
 padding: 20px 30px 50px;
 }
 
-
-
+.hash {
+background:pink;
+}
 .box{
-border-style: solid;
-margin-left:50px;
+border-style: inset;
+margin-left:60px;
 margin-top:-70px;
 padding:20px;
 
+
 }
- h7{
-float: right;
+
+h7 {
 color:red;
-}
-
-#right {
-
 float:right;
 }
+
+
 
 </style>
 <body>
   <div id="top">
           <div class="header">
               <div id="pic">
-                  <span>
-                <img class=login src="login.png">
+
+                <img class="login" src="login.png">
+                  </div>
+              <div id="name">
                   <span>kchaeeun</span>
                   <span>컴퓨터공학</span>
                   <span>/19학번</span>
-                  </span>
+                  <span>▷ 1일전</span>
+
+              </div>
+              <div id="dot">
+                  <img class="d" src="dot.png">
               </div>
           </div>
       <div id="display">
-          <h2>제목</h2>
+          <h2 id="title">제목</h2>
           <h3>내용</h3>
+          <br>
       </div>
-        <img src="https://static.wixstatic.com/media/85bd45bf99404666807e2f99e2171e1e.jpg/v1/fill/w_1110,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/85bd45bf99404666807e2f99e2171e1e.jpg" width="740">
+        <img src="https://static.wixstatic.com/media/85bd45bf99404666807e2f99e2171e1e.jpg/v1/fill/w_1110,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/85bd45bf99404666807e2f99e2171e1e.jpg" width="882.67">
       <section class="fix">
-          <span>#</span>
-          <span>IT</span>
-          <span>#</span>
-          <span>프론트엔드</span>
-          <span>#</span>
-          <span>백엔드</span>
+          <div class="hash">
+              <span>#</span>
+              <span>IT</span>
+              <span>#</span>
+              <span>프론트엔드</span>
+              <span>#</span>
+              <span>백엔드</span>
+          </div>
           <br>
           <hr>
-          <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjimin326ww.wixsite.com%2Fhype-girl%2Fpost%2Fhow-blogging-is-turning-into-the-new-online-magazine"><img class="logo" src="logo.png"></a>
+          <span><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjimin326ww.wixsite.com%2Fhype-girl%2Fpost%2Fhow-blogging-is-turning-into-the-new-online-magazine"><img class="logo" src="logo.png"></a></span>
+          <span><a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Fjimin326ww.wixsite.com%2Fhype-girl%2Fpost%2Fhow-blogging-is-turning-into-the-new-online-magazine"><img class="in" src="in.png"></a></span>
           <br><hr>
           <aside>
-            <span class="left">댓글</span>
-            <span class="left">0</span>
-            <span class="left">개</span>
+              <span class="left">댓글</span>
+              <span class="left">0</span>
+              <span class="left">개</span>
+              <span class="left">조회수</span>
+              <span class="left">0</span>
+              <span class="left">회</span>
               <h7>♡</h7>
           </aside>
-
       </section>
   </div>
   <div id="middle">
@@ -132,13 +173,12 @@ float:right;
       <br>
       <hr>
       <br>
-      <section><img class=login src="login.png">
-      <div class="box">
+      <section><span><img class=login src="login.png"></span>
+      <span><div class="box">
           <h4>댓글을 입력하세요.</h4>
       </div>
+          </span>
       </section>
   </div>
-
-
 </body>
 </html>
