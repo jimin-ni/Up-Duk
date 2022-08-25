@@ -12,7 +12,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "main";
+        return "portfolio";
     }
 //    @GetMapping("hello-mvc")
 //    public String helloMvc(@RequestParam(value = "name") String name2, Model model){
