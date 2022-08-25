@@ -116,8 +116,39 @@ color:red;
 float:right;
 }
 
+*{
+  box-sizing:border-box;
+}
+#container {
+  width:80%;
+  margin:20px auto;
+  padding:20px;
+}
+input[type="text"] {
+  width:80%;
+  float:left;
+  height:50px;
+  padding-left:30px;
+}
+button {
+  width:20%;
+  height:50px;
+  float:right;
+  background:#222;
+  color:#fff;
+  border:none;
+}
+hr { clear:both; display:none; }
+ul { list-style:none; padding-top:50px;}
+li { line-height: 2.5; }
+li:hover { cursor:pointer;}
 
-
+#itemList li{
+    border:1px 0px solid #B70050;
+}
+#itemList img{
+    border:1px solid black;
+}
 </style>
 <body>
   <div id="top">
@@ -170,15 +201,16 @@ float:right;
   </div>
   <div id="middle">
       <h2>댓글</h2>
-      <br>
-      <hr>
-      <br>
-      <section><span><img class=login src="login.png"></span>
-      <span><div class="box">
-          <h4>댓글을 입력하세요.</h4>
+      <div id="container">
+          <form action="">
+              <input type="text" id="subject" autofocus>
+              <button onclick="newRegister(); return false;">추가</button>
+          </form>
+          <hr>
+          <ul id="itemList">
+
+          </ul>
       </div>
-          </span>
-      </section>
   </div>
 </body>
 </html>
