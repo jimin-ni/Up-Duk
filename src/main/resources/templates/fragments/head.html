@@ -46,7 +46,11 @@
         ul li{
             list-style:none;
         }
-        #Kmenu{
+        .Knav{
+            position:sticky;
+            top:0;
+        }
+        .Knavbar{
             background-color:#B70050;
             text-align:center;
             width:100%;
@@ -59,7 +63,7 @@
             margin:0px;
             padding:0px;
         }
-        #Kmenu ul li{
+        .Knav ul li{
             position:relative;
             right:-400px;
             float:left;
@@ -105,20 +109,18 @@
                 <span>UP-Duk</span>
             </div>
         </div>
-        <nav id="Kmenu">
-            <ul>
-                <li>홈</li>
-                <li>전공</li>
-                <li>직무</li>
-            </ul>
-            <div class="Kdropdown01">
-                <div class="Kglobal">
-                    <span>글로벌융합대학</span>
-                    국어국문학
-                    일어일문학
-                    중어중문학
+        <nav id="Knav">
+            <nav class="Knavbar">
+                <ul>
+                    <li>홈</li>
+                    <li>전공</li>
+                    <li>직무</li>
+                </ul>
+                <div class="Kdropdown01">
+                    <div class="Kglobal">
+                    </div>
                 </div>
-            </div>
+            </nav>
         </nav>
         <footer>
             <dt>©2022 by Hype-girl</dt><br/>
