@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="kr">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="list_1.css">
+    <!--        css 파일은 list_3.css을 이용한다. -->
+    <title>list_1</title>
+
+    <!--다른 html 파일의 내용을 현재 html 파일에 불러오는 방법? -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        	$(".post_box").load("../fragments/post.html #title");
+        });
+    </script>
+
+</head>
+<body>
+  <div id="header">
+    <ul>header부분 입니다</ul>
+  </div>
+
+  <div id="sidebar_a">
+    <!--<ul>left sidebar</ul>-->
+  </div>
+
+  <div id="sidebar_b">
+    <!--<ul>right sidebar</ul>-->
+
+  </div>
+
+  <div id="content">
+    <nav>
+      <span><a class="list_bar" href="list_1.html">새삭</a></span>
+      <span><a class="list_bar" href="list_2.html">나무</a></span>
+      <span><a class="list_bar" href="list_3.html">열매</a></span>
+    </nav>
+
+      <!--게시물을 보여줄
+      <a href="../fragments/post.html">
+          <div class="post_box"><!--href 링크는 제작한 html 파일-->
+          <!--<ul>작성된 게시물 </ul>-->
+      <!--</div>
+  </a>-->
+      <a href="../fragments/post.html">
+        <div class="post_box"><!--href 링크는 제작한 html 파일-->
+          <!--<ul>작성된 게시물 </ul>-->
+        </div>
+         <div class="post_box2">
+             <img class="point_icon" src="img_file/watch.png">
+             <img class="point_icon" src="img_file/comment.png">
+             <img class="point_icon" src="img_file/heart.png">
+         </div>
+      </a>
+
+  </div>
+
+      <div id="footer">
+        <ul>©2022 by Hype-girl</ul>
+        <ul>2022 1st IT Engineering Alliance Hackathon </ul>
+        <ul>Draw forth Synergy</ul>
+
+      </div>
+
+    </body>
+    </html>
