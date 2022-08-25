@@ -15,47 +15,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-       $(document).ready(function () {
-            var width = $('[data-role="slider"]').attr('data-width');
-            var height = $('[data-role="slider"]').attr('data-height');
-            var count = $('[data-role="slider"] div.item').length;
+        (function() { // A
+            const itemWrapperEl = document.querySelector('.item-wrapper'),
+                leftBtnEl = document.getElementById('left-btn'),
+                rightBtnEl = document.getElementById('right-btn');
 
-            $('[data-role="slider"]').css({
-                position: 'relative',
-                overflow: 'hidden',
-                width: width,
-                height: height
-            }).find('.container').css({
-                position: 'absolute',
-                width: count * width,
-                overflow: 'hidden'
-            }).find('.item').css({
-                width: width,
-                height: height,
-                float: 'left'
-            });
+        function moveSlides(direction) { // B
+            const item = itemWrapperEl.querySelector('.item'),
+                itemMargin = parseFloat(getComputedStyle(item).marginRight);
+                itemWidth = itemMargin + item.offsetWidth + 2;
 
-            var currentPage = 0;
-            var changePage = function () {
-                $('[data-role="slider"] > .container').animate({
-                    left: -currentPage * width
-                }, 500)
-            };
+            let itemCount = Math.round(itemWrapperEl.scrollLeft / itemWidth);
 
-            $('#left-button').click(function () {
-                if (currentPage > 0) {
-                    currentPage = currentPage - 1;
-                    changePage();
-                }
-            });
+            if (direction === 'left') {
+            itemCount = itemCount - 1;
+            } else {
+            itemCount = itemCount + 1;
+            }
+            itemWrapperEl.scrollLeft = itemWidth * itemCount;
+            }
 
-            $('#right-button').click(function () {
-                if (currentPage < count - 1) {
-                    currentPage = currentPage + 1;
-                    changePage();
-                }
-            });
-        });
+            leftBtnEl.addEventListener("click", e => moveSlides("left")); // C
+            rightBtnEl.addEventListener("click", e => moveSlides("right"));
+            })();
     </script>
     <th:block layout:fragment="script"></th:block>
     <th:block layout:fragment="css"></th:block>
@@ -93,40 +75,47 @@
 <br>
 <br>
 <br>
-<!-- 게시글 -->
-<div style="margin 40px 0; padding 10px 20px;">
-<div data-role="slider" data-width="500" data-height="400" style="margin: 0 auto; color: orange;">
-        <div class="container" style="overflow: hidden; display: inline;">
-            <!-- 갤러리 첫번째 페이지 -->
-            <div class="item">
-                <a href="">
-                    <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/news/65f0b187018200001.png" width="500" height="300">
-                    <h3>내가 카카오에 입사할 수 있었던 5가지 이유</h3>
-                </a>
+
+
+<div class="slider">
+    <div class="slider-btn-wrapper slider-btn-wrapper-left"> <!-- 왼쪽 화살표 -->
+        <button id="left-btn" class="slider-btn">&larr;</button>
+    </div>
+    <div class="item-wrapper">
+        <div class="item">
+            <img src="./images/seoul.jpg"/>
+            <div class="title">
+                <h2>서울</h2>
+                <p>3000원</p>
             </div>
-            <!-- 갤러리 두번째 페이지 -->
-            <div class="item">
-                <a href="">
-                    <img src="https://www.gizmochina.com/wp-content/uploads/2019/10/samsung.jpg" width="500" height="300">
-                    <h3>비전공자부터 삼성 개발직까지 3년</h3>
-                </a>
+        </div>
+        <div class="item">
+            <img src="./images/jeju.jpg"/>
+            <div class="title">
+                <h2>제주도</h2>
+                <p>4000원</p>
             </div>
-            <div class="item">
-                <h1>내가 삼성에 입사할 수 있었던 2가지 이유</h1>
-                <p>내가 삼성에 입사할 수 있었던 것은 여러가지 노력해서이다.</p>
+        </div>
+        <div class="item">
+            <img src="images/suwon.jpg"/>
+            <div class="title">
+                <h2>수원</h2>
+                <p>3000원</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./images/muju.jpg"/>
+            <div class="title">
+                <h2>무주</h2>
+                <p>5000원</p>
             </div>
         </div>
     </div>
+    <div class="slider-btn-wrapper slider-btn-wrapper-right"> <!-- 오른쪽 화살표 -->
+        <button id="right-btn" class="slider-btn">&rarr;</button>
+    </div>
 </div>
-<!--좌 우 이동 버튼-->
-<div style="margin: 0 auto; text-align: center;">
-    <button id="left-button" style="background-color: white; border-style: hidden;" >
-        <h3>👈</h3>
-    </button>
-    <button id="right-button" style="background-color: white; border-style: hidden;">
-        <h3>👉</h3>
-    </button>
-</div>
+
 
 </body>
 </html>
