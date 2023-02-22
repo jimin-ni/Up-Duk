@@ -1,4 +1,4 @@
-sdfsdfsdf=![header](https://capsule-render.vercel.app/api?type=waving) 
+![header](https://capsule-render.vercel.app/api?type=waving?text=Hello%World!) 
 
 # Up-Duk
 
