@@ -1,9 +1,9 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&text=UP%20DUK&fontSize=60&fontColor=F2E0FE) 
 <br/>
 <br/>
-✨DrawForthSynergy Hackathon - service(Up-Duk) 취업 정보 및 후기 공유 웹 사이트✨  
-  
 덕성여자대학교 제 1회 IT 연합 해커톤 'Draw for Synergy' 출품작  
+
+✨Up-Duk ervice : 취업 정보 및 후기 공유 웹 사이트✨  
 -------------------------------------------------------------------------------------------------
 <br/>
 <br/>
@@ -53,4 +53,4 @@
 
 ----------------------------------------------------------------------------------
 ♥  
-덕성여자대학교 컴퓨터공학전공 김지민
+덕성여자대학교 컴퓨터공학전공 [김지민]:(https://github.com/jimin-ni)
