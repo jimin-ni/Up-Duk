@@ -1,7 +1,10 @@
 # Up-Duk
-✨DrawForthSynergy Hackathon - service(Up-Duk) 취업 정보 및 후기 공유 웹 사이트✨
-덕성여자대학교 IT 연합 해커톤 'Draw for Synergy' 출품작
 
+✨DrawForthSynergy Hackathon - service(Up-Duk) 취업 정보 및 후기 공유 웹 사이트✨
+덕성여자대학교 제 1회 IT 연합 해커톤 'Draw for Synergy' 출품작
+
+
+-------------------------------------------------------------------------------------------------
 
 
 📅 활동 및 개발 기간
@@ -19,10 +22,17 @@
 취업 정보 공유를 수월히 하고, 동문 간 정보를 안전히 공유하며, 함께 협력할 수 있습니다.
 
 
+🛠 담당 및 역할
+프론트엔드 및 기획 담당
+
+전공/직군의 상세 설명에 대한 페이지로 총 3가지 종류입니다.
 ![image](https://user-images.githubusercontent.com/101644134/220550569-e9db1ff4-1ab0-4328-b5cc-b267920a8f86.png)
 
+본 웹페이지의 실제 유저-게시자의 역할을 3가지로 분리해 카테고리를 나눈 구조가 특징입니다. 
+![image](https://user-images.githubusercontent.com/101644134/220550960-101906c7-fa8c-4eff-8599-ed171ecf8f65.png)
 
 
 
-♥ 프론트엔드 및 기획 담당
+
+♥ 
 덕성여자대학교 컴퓨터공학전공 김지민
