@@ -37,6 +37,8 @@
 📚 사용 스텍
 https://img.shields.io/badge/%23E34F26-HTML-orange  https://img.shields.io/badge/%231572B6-CSS-yellow
 
+<img src="https://img.shields.io/badge/HTML-23E34F2?style=flat&logo=HTML&logoColor=white"/>
+
 
 ♥ 
 덕성여자대학교 컴퓨터공학전공 김지민
