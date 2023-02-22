@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&text=UP%20DUK&fontSize=70&fontColor=E6E6F) 
+![header](https://capsule-render.vercel.app/api?type=waving&text=UP%20DUK&fontSize=60&fontColor=E6E6F) 
 
 
 ✨DrawForthSynergy Hackathon - service(Up-Duk) 취업 정보 및 후기 공유 웹 사이트✨
