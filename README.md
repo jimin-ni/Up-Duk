@@ -1,19 +1,25 @@
-![header](https://capsule-render.vercel.app/api?type=waving&text=UP%20DUK&fontSize=60&fontColor=E1BCFB) 
+![header](https://capsule-render.vercel.app/api?type=waving&text=UP%20DUK&fontSize=60&fontColor=F2E0FE) 
+
 
 
 ✨DrawForthSynergy Hackathon - service(Up-Duk) 취업 정보 및 후기 공유 웹 사이트✨
-
 덕성여자대학교 제 1회 IT 연합 해커톤 'Draw for Synergy' 출품작
+
+
+
+
+
 
 
 -------------------------------------------------------------------------------------------------
 
 
-📅 <br>활동 및 개발 기간 </br>
+<h2> 📅 활동 및 개발 기간 </h2>
 2022.08.22 ~ 2022.08.26
 
 
-📌 주제
+
+<h2> 📌 주제 </h2>
 덕성여자대학교 만의 취업 정보 및 후기 공유 웹사이트
 
 취업을 준비하면서 같은 전공 선배 혹은 동문의 도움이 필요한 학생, 
@@ -24,7 +30,7 @@
 취업 정보 공유를 수월히 하고, 동문 간 정보를 안전히 공유하며, 함께 협력할 수 있습니다.
 
 
-🛠 담당 및 역할
+<h2> 🛠 담당 및 역할 </h2>
 프론트엔드 및 기획 담당
 
 전공/직군의 상세 설명에 대한 페이지로 총 3가지 종류입니다.
@@ -35,10 +41,13 @@
 
 
 
-📚 사용 스텍
+<h2> 📚 사용 스텍 </h2>
 <img src="https://img.shields.io/badge/HTML5-23E34F2?style=flat&logo=HTML&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-231572B6?style=flat&logo=HTML&logoColor=white"/>
 
 
 
+
+
+----------------------------------------------------------------------------------
 ♥
 덕성여자대학교 컴퓨터공학전공 김지민
