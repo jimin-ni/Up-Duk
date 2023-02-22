@@ -37,7 +37,7 @@
 📚 사용 스텍
 https://img.shields.io/badge/%23E34F26-HTML-orange  https://img.shields.io/badge/%231572B6-CSS-yellow
 
-<img src="https://img.shields.io/badge/HTML-23E34F2?style=flat&logo=HTML&logoColor=white"/>
+<img src="https://img.shields.io/badge/HTML5-23E34F2?style=flat&logo=HTML&logoColor=white"/>
 
 
 ♥ 
