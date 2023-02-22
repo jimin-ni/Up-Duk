@@ -3,7 +3,7 @@
 <br/>
 덕성여자대학교 제 1회 IT 연합 해커톤 'Draw for Synergy' 출품작  
 
-<h1> ✨Up-Duk ervice : 취업 정보 및 후기 공유 웹 사이트✨ </h1>  
+<h1> ✨Up-Duk Service : 취업 정보 및 후기 공유 웹 사이트✨ </h1>  
 <br/>
 <br/>
 <br/>
