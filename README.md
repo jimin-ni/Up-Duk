@@ -1,7 +1,7 @@
-![header](https://capsule-render.vercel.app/api?type=waving&text=UP%Duk&color=random) 
+![header](https://capsule-render.vercel.app/api?type=waving&text=UP%Duk&&fontSize=80&fontColor=FFE4C4) 
 
 
-✨DrawForthSynergy Hackathon - service(Up-Duk) %취업 정보 및 후기 공유 웹 사이트✨ %
+✨DrawForthSynergy Hackathon - service(Up-Duk) 취업 정보 및 후기 공유 웹 사이트✨
 
 덕성여자대학교 제 1회 IT 연합 해커톤 'Draw for Synergy' 출품작
 
